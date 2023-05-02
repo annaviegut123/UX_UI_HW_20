@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+     <!-- twin cities recovery project case study page -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Twin Cities Recovery Project Case Study</title>
+
+        <!-- css style sheet -->
+        <link href="CSS/style.css" rel="stylesheet" type="text/css">
+
+        <!-- fonts (crimson text and roboto) -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Roboto&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- header section -->
+        <header class="addventure-header">
+            <h2 class="addventure-header-heading">Twin Cities Recovery Project</h2>
+            <p class="addventure-header-subheading">Website Redesign</p>
+
+            <!-- navigation menu -->
+            <!-- inspired by and modified from ljc-dev original 'Easy hamburger menu with JS - Beginners' code https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0 -->
+            <button class="hamburger">
+                <img src="Images\menu-icon-image.png" class="menuIcon">
+                <img src="Images\close-icon.png" class="closeIcon">
+            </button>
+            <div class="menu">
+            <ul>
+                <li class="menuItem first"><a href="index.html">HOME</a></li>
+                <li class="menuItem second"><a href="about.html">ABOUT</a></li>
+                <li class="menuItem third"><a href="#work">WORK</a></li>
+                <li class="menuItem fourth"><a href="https://drive.google.com/file/d/18dxcBKrbKlt9mGfkNx0uI7D8Q0Klu5jQ/view?usp=share_link" target="_blank">RESUME</a></li>
+                <li class="menuItem fifth"><a href="#contact">CONTACT</a></li>
+            </ul>
+            <div class="social-icons-nav">
+                <a class="menuItemIcon" href="mailto: Anna.Viegut@gmail.com"><img src="Images\email-icon.png" class="social-icon-nav"></a>
+                <a class="menuItemIcon" href="https://www.linkedin.com/in/anna-viegut-3b64971b5/" target="_blank"><img src="Images\linkedin-icon.png" class="social-icon-nav"></a>
+                <a class="menuItemIcon" href="https://dribbble.com/Anna-UI" target="_blank"><img src="Images\dribbble-icon.png" class="social-icon-nav"></a>
+                <a class="menuItemIcon" href="https://www.behance.net/Anna-UI" target="_blank"><img src="Images\behance-icon.png" class="social-icon-nav"></a>
+            </div>
+            </div>
+
+            <!-- javascript for navigation menu -->
+            <script>
+
+            const menu = document.querySelector(".menu");
+            const menuItems = document.querySelectorAll(".menuItem");
+            const hamburger= document.querySelector(".hamburger");
+            const closeIcon= document.querySelector(".closeIcon");
+            const menuIcon = document.querySelector(".menuIcon");
+
+            function toggleMenu() {
+                if (menu.classList.contains("showMenu")) {
+                    menu.classList.remove("showMenu");
+                    closeIcon.style.display = "none";
+                    menuIcon.style.display = "block";
+                } else {
+                    menu.classList.add("showMenu");
+                    closeIcon.style.visibility = "visible";
+                    closeIcon.style.display = "block";
+                    menuIcon.style.display = "none";
+                }
+            }
+
+            hamburger.addEventListener("click", toggleMenu);
+
+            menuItems.forEach( 
+                function(menuItem) { 
+                    menuItem.addEventListener("click", toggleMenu);
+                }
+            )
+            </script>
+         </header>
+
+    <!-- hero section -->
+    <section class="addventure-hero">
+        <div class="addventure-column">
+        <img src="Images\virginia-hero-image-1.jpg" class="addventure-hero-image-1">
+        </div>
+        <img src="Images\virginias-judicial-system-image.png" class="addventure-image">
+        <div class="addventure-column">
+        <img src="Images\virginia-hero-image-2.jpg" class="addventure-hero-image-2">
+        </div>
+    </section>
+
+     <!-- overview section -->
+    <section class="addventure-overview">
+        <h3 class="addventure-overview-heading-text">Overview</h3>
+        <div class="overview-column">
+        <h3 class="addventure-overview-subheading-text">THE PROBLEM</h3>
+        <p class="addventure-overview-paragraph-text">Virginia’s Judicial System website is very outdated with many UX issues.</p>
+        </div>
+        <div class="overview-column">
+        <h3 class="addventure-overview-subheading-text">THE SOLUTION</h3>
+        <p class="addventure-overview-paragraph-text">A redesigned information architecture including new header and footer navigation, UI with new colors and imagery, and improved usability that allows a user to find information quickly and efficiently.</p>
+        </div>
+        <div class="overview-column">
+        <h3 class="addventure-overview-subheading-text">TOOLS</h3>
+        <p class="addventure-overview-paragraph-text">Figma, InVision, Dovetail, Miro, Milanote, Adobe Suite, Google Suite</p>
+        </div>
+        <div class="overview-column">
+        <h3 class="addventure-overview-subheading-text">MY ROLE</h3>
+        <p class="addventure-overview-paragraph-text">UI/UX Designer</p>
+        </div>
+    </section>
+
+    <!-- figma prototype embed code -->
+    <div class="addventure-interactive-prototype">
+    <iframe src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FwfwXml4TMpKAwxFQjtGyFa%2FApplying-Visual-Design---Virginia's-Judicial-System-Site-(Copy)-(Copy)%3Ftype%3Ddesign%26node-id%3D1-2%26scaling%3Dmin-zoom%26page-id%3D0%253A1%26starting-point-node-id%3D1%253A2%26show-proto-sidebar%3D1%26hide-ui%3D1" allowfullscreen></iframe>
+    </div>
+
+    <!-- main addventure case study section -->
+    <section class="addventure-main">
+        <h3 class="addventure-main-heading-text-first">01 Design Analysis</h3>
+        <h3 class="addventure-main-subheading-text">PROTO PERSONA</h3>
+        <img src="Images/virginia-proto-persona-image.png" class="addventure-proto-persona-image">
+
+        <h3 class="addventure-main-subheading-text">USER PATH</h3>
+        <img src="Images/user-path-image.png" class="addventure-proto-persona-image">
+
+        <h3 class="addventure-main-subheading-text">HEURISTIC EVALUATION</h3>
+        <div class="addventure-images-wrapper">
+        <img src="Images/heuristic-evaluation-image.png" class="addventure-survey-data-image-1">
+        </div>
+
+        <h3 class="addventure-main-subheading-text">COLOR ACCESSIBILITY ASSESSMENT</h3>
+        <div class="addventure-images-wrapper">
+            <img src="Images/color-accessibility-assessment-image-1.jpg" class="addventure-affinity-diagram-image-1">
+            <img src="Images/color-accessibility-assessment-image-2.jpg" class="addventure-affinity-diagram-image-2">
+            <img src="Images/color-accessibility-assessment-image-3.png" class="addventure-affinity-diagram-image-2">
+        </div>
+
+        <h3 class="addventure-main-subheading-text">USABILITY TESTING</h3>
+        <div class="addventure-images-wrapper">
+            <img src="Images/usability-testing-image-1.jpg" class="addventure-empathy-map-image-1">
+            <img src="Images/usability-testing-image-2.jpg" class="addventure-empathy-map-image-2">
+            <img src="Images/usability-testing-image-3.jpg" class="addventure-empathy-map-image-2">
+        </div>
+
+        <h3 class="addventure-main-subheading-text">MOOD BOARDS</h3>
+        <div class="addventure-images-wrapper">
+            <img src="Images/mood-board-image-1.png" class="addventure-empathy-map-image-1">
+            <img src="Images/mood-board-image-2.png" class="addventure-empathy-map-image-2">
+            <img src="Images/mood-board-image-3.png" class="addventure-empathy-map-image-2">
+        </div>
+
+        <h3 class="addventure-main-heading-text">02 Information Architecture</h3>
+        <h3 class="addventure-main-subheading-text">NAVIGATION HEURISTIC EVALUATION</h3>
+        <div class="addventure-images-wrapper">
+            <img src="Images/navigation-heuristic-evaluation-image-1.png" class="addventure-feature-prioritization-image-1">
+            <img src="Images/navigation-heuristic-evaluation-image-2.png" class="addventure-feature-prioritization-image-2">
+        </div>
+
+        <h3 class="addventure-main-subheading-text">NAVIGATION USABILITY TESTING</h3>
+        <div class="addventure-images-wrapper">
+            <img src="Images/navigation-heuristic-evaluation-image-1.png" class="addventure-feature-prioritization-image-1">
+            <img src="Images/navigation-heuristic-evaluation-image-2.png" class="addventure-feature-prioritization-image-2">
+        </div>
+
+        <h3 class="addventure-main-subheading-text">CARD SORTING</h3>
+        <div class="addventure-images-wrapper">
+            <img src="Images/card-sorting-image-1.jpg" class="addventure-empathy-map-image-1">
+            <img src="Images/card-sorting-image-2.jpg" class="addventure-empathy-map-image-2">
+            <img src="Images/card-sorting-image-3.jpg" class="addventure-empathy-map-image-2">
+        </div>
+
+        <h3 class="addventure-main-subheading-text">SITEMAP</h3>
+        <img src="Images/sitemap-image.png" class="addventure-storyboard-image">
+
+        <h3 class="addventure-main-subheading-text">NAVIGATION UI PROTOTYPE</h3>
+        <img src="Images/sitemap-image.png" class="addventure-storyboard-image">
+
+        <h3 class="addventure-main-heading-text">03 UI Navigation</h3>
+        <h3 class="addventure-main-subheading-text">HEADER & FOOTER NAVIGATION COMPONENTS</h3>
+        <img src="Images/card-sorting-image-3.jpg" class="addventure-empathy-map-image-2">
+
+        <h3 class="addventure-main-subheading-text">PAGE WIREFRAMES</h3>
+        <img src="Images/card-sorting-image-3.jpg" class="addventure-empathy-map-image-2">
+
+        <h3 class="addventure-main-subheading-text">CLICKABLE WIREFRAME PROTOTYPES</h3>
+        <img src="Images/card-sorting-image-3.jpg" class="addventure-empathy-map-image-2">
+
+        <h3 class="addventure-main-subheading-text">USABILITY TESTS</h3>
+        <img src="Images/card-sorting-image-3.jpg" class="addventure-empathy-map-image-2">
+
+        <h3 class="addventure-main-subheading-text">UI STYLE TILE</h3>
+        <img src="Images/style-tile-image.png" class="addventure-digital-wireframes-image">
+
+        <h3 class="addventure-main-subheading-text">APPLYING VISUAL DESIGN</h3>
+        <img src="Images/style-tile-image.png" class="addventure-digital-wireframes-image">
+
+        <h3 class="addventure-main-subheading-text">CLICKABLE VISUAL DESIGN PROTOTYPES</h3>
+        <img src="Images/style-tile-image.png" class="addventure-digital-wireframes-image">
+
+        <h3 class="addventure-main-heading-text">04 Responsive & Interaction Design</h3>
+
+        <h3 class="addventure-main-subheading-text">UI STYLE GUIDE</h3>
+        <div class="addventure-images-wrapper">
+            <img src="Images/style-guide-image-1.jpg" class="addventure-iteration-image-1">
+            <img src="Images/style-guide-image-2.jpg" class="addventure-iteration-image-2">
+        </div>
+
+        <h3 class="addventure-main-subheading-text">CONTINUED USER TESTING</h3>
+        <p>“Overall I liked just how big all the boxes were and how easy it was to click through it. I didn't really have a problem figuring out where to go.” -Bryant</p>
+        <p>“So right off the bat, when you first pull up the site, the very first thing I noticed, which I really liked, is the selection of the font. It has more of that kind of government feel. So there's the certain kind of stylistically what I would picture kind of a government website having.” -Todd</p>
+
+        <h3 class="addventure-main-subheading-text">SUMMARY</h3>
+        <div class="addventure-summary-columns">
+        <p class="addventure-summary-text">Although I only focused on one user path of Virginia’s Judicial System website, I believe its new look and functionality could help visitors needing to pay a traffic ticket through the mail and complete other tasks because of my user testing and heuristic evaluations. I would love to finish the responsive design including a tablet version as well as applying my UI style guide to the rest of the site’s possible pages. I enjoyed working my way through the design process phases: empathize, define, ideate, prototype, and test. I learned a lot from this project, notably methods of creating information architecture, wireframes, and prototypes. I grew a lot in my ability to use Figma with making components, variants, interactions and animations with auto layout. Creating a full case study of a website redesign has provided me with greater skills to implement good accessible design. I am thankful for the chance to grow as a UI/UX professional and am excited to see where future projects may take me!</p>
+        <img src="Images\virginias-judicial-system-image.png" class="addventure-log-out-image">
+        </div>
+    </section>
+
+  <!-- footer section -->
+  <footer id="contact">
+    <a href="about.html"><img src="Images\profile-image.png" class="profile-image"></a>
+    <div class="footer-text">
+        <h3 class="footer-text-element">ANNA VIEGUT</h3>
+        <p class="footer-text-element">I’m creating a more beautiful world starting with the corner I’m called to cultivate: UI/UX.</p>
+        <p class="footer-text-element">763-406-9846</p>
+        <p class="footer-text-element">Anna.Viegut@gmail.com</p>
+    </div>
+    <div class="social-icons">
+        <a href="mailto: Anna.Viegut@gmail.com"><img src="Images\email-icon.png" class="social-icon-footer"></a>
+        <a href="https://www.linkedin.com/in/anna-viegut-3b64971b5/" target="_blank"><img src="Images\linkedin-icon.png" class="social-icon-footer"></a>
+        <a href="https://dribbble.com/Anna-UI" target="_blank"><img src="Images\dribbble-icon.png" class="social-icon-footer"></a>
+        <a href="https://www.behance.net/Anna-UI" target="_blank"><img src="Images\behance-icon.png" class="social-icon-footer"></a>
+    </div>
+</footer>
+</body>
+</html>
